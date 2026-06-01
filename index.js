@@ -9,7 +9,11 @@ const AUTH_HEADERS = {
     "Content-Type": "application/json",
 };
 
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: false
+}));
 
 app.get("/api/Xiaomi/pdv", async (req, res) => {
     try {
