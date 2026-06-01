@@ -5,7 +5,7 @@ let filteredData = [];
 let currentChannel = '';
 
 // URL base de la API
-const API_BASE_URL = 'http://pdvxiaomi-production.up.railway.app:8080/api/Xiaomi/pdv';
+const API_BASE_URL = 'https://pdvxiaomi-production.up.railway.app/api/Xiaomi/pdv';
 
 // Cargar datos de la API según el canal seleccionado
 async function loadData() {
